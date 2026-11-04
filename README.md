@@ -6,6 +6,13 @@
 
 [Stride 앱 열기](https://runner-ai-coach.vercel.app)
 
+## 프로젝트 문서
+
+- [기능 요구사항 정의서](docs/requirements.md)
+- [시스템 아키텍처](docs/architecture.md)
+- [배포 검증 기록](docs/deployment-verification.md)
+- [사용자 테스트 및 피드백 기록](docs/user-testing.md)
+
 ## 현재 구현
 
 - 모바일 우선 대시보드 시안
@@ -57,10 +64,9 @@ Publishable key는 브라우저에서 사용하도록 공개된 키입니다. �
 
 ## 다음 작업
 
-1. Supabase 계획 마이그레이션 적용 후 계획 저장·조회·삭제 확인
-2. RAG 등 두 번째 필수 기술 요소를 팀에서 결정하고 근거 자료 구성
-3. AI 코칭 안전 기준과 사용자별 기록을 활용한 응답을 실제 사용자 테스트로 개선
-4. 외부 사용자 5명 이상 테스트 후 피드백을 반영하고 결과를 문서화
+1. 외부 사용자 최소 5명 테스트를 완료하고 응답 및 피드백 반영 결과를 문서화
+2. Google 로그인, AI Agent 기록 조회, RAG 출처 표시를 팀 테스트 계정으로 확인
+3. 실제 합의된 팀원 역할과 각자 기여를 README 또는 제출 문서에 기록
 
 ## 기술 스택
 

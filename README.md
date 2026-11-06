@@ -8,10 +8,29 @@
 
 ## 프로젝트 문서
 
+- [프로젝트 기획서](docs/project-plan.md)
+- [발표 자료](docs/presentation.md)
 - [기능 요구사항 정의서](docs/requirements.md)
 - [시스템 아키텍처](docs/architecture.md)
 - [배포 검증 기록](docs/deployment-verification.md)
 - [사용자 테스트 및 피드백 기록](docs/user-testing.md)
+
+## 저장소 및 버전 관리
+
+- **평가용 저장소:** [deu061385-lgtm/Final-Project](https://github.com/deu061385-lgtm/Final-Project)
+- **원본 조직 저장소:** [Codyssey-AI-Naitive-Final-Project/Final-Project](https://github.com/Codyssey-AI-Naitive-Final-Project/Final-Project)
+- **기본 브랜치:** `main`
+- **운영 원칙:** 평가용 변경은 개인 포크의 `origin/main`에 푸시하고, 원본 저장소 `upstream/main`은 팀 합의 없이 직접 수정하지 않습니다.
+
+아래는 2026-11-05 기준 커밋 이력 스냅샷입니다. 이번 문서·화면 조정 전의 기준 이력이며, 작성자는 Git 커밋에 기록된 author 값으로 팀원별 역할 확인을 대신하지 않습니다.
+
+| 커밋 | 날짜 | 작성자 | 내용 |
+| --- | --- | --- | --- |
+| `1cd9e90` | 2026-11-04 | `deu061385-lgtm` | 팀 기여 요약 갱신 |
+| `b38846d` | 2026-11-04 | `deu061385-lgtm` | 팀 기여 문서화 |
+| `92feab1` | 2026-11-04 | `deu061385-lgtm` | 평가 및 사용자 테스트 증빙 추가 |
+| `b0ca1f4` | 2026-11-03 | `deu061385-lgtm` | AI 생성 안내 명확화 |
+| `80fb35c` | 2026-11-03 | `deu061385-lgtm` | 운동 영양 RAG 추가 |
 
 ## 팀원 및 역할
 
@@ -30,7 +49,7 @@
 - 모바일 우선 대시보드 시안
 - 홈, 기록, 일정, 코치 탭 전환
 - 러닝·축구·기타 활동 기록 입력 및 RPE 1~10 기록 (입력 기록은 브라우저 로컬 저장소에 보관)
-- Supabase Auth 기반 Google 로그인과 사용자별 운동 기록 저장 구조 (Supabase 프로젝트 설정 후 활성화)
+- Supabase Auth 기반 Google 로그인과 로그인 사용자별 운동 기록 저장
 - 일정 탭에서 선택한 오늘/미래 날짜에 러닝·축구·헬스·기타 운동 계획을 계정별로 저장하고 삭제
 - 계정 목표·운동 경험은 코칭 맥락으로 불러오고, 최근 운동 기록은 AI가 필요하다고 판단할 때 `get_recent_activities` 도구로 조회
 - 운동·영양 질문은 큐레이션한 근거 요약에서 관련 내용을 검색해 AI에 전달하고, 답변에 원문 출처를 표시 (RAG)
@@ -76,7 +95,7 @@ Publishable key는 브라우저에서 사용하도록 공개된 키입니다. �
 
 ## 다음 작업
 
-1. 외부 사용자 최소 5명 테스트를 완료하고 응답 및 피드백 반영 결과를 문서화
+1. 팀원 보고와 사용자 확인 기준 배포 앱·설문 완료 5명이며, Google 응답 시트 대조와 익명 피드백 최종 집계
 2. Google 로그인, AI Agent 기록 조회, RAG 출처 표시를 팀 테스트 계정으로 확인
 
 ## 기술 스택
